@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+
+<head>
+
+<title>shopping mart</title>
+<meta name="viewport" content="width=device-width, initial-scale=0">
+        <script src="js\jquery-3.4.1.min.js"></script>
+	    <script src="js\bootstrap.min.js"></script> 
+		<link rel="stylesheet" type="text/css" href="css\bootstrap.min.css"> 
+
+<link rel="stylesheet" href="sri.css">
+<script src="shop.js"></script>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<div>
+<h1>shopping mart</h1>
+</div>
+
+<nav class="navbar navbar-inverse" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+	  <img style="float:RIGHT; width:80px; height:50px;" src="image\mart1.png"></img>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="main.html">Home</a></li>
+      <li><a href="page1.html">womens wear</a></li>
+      <li><a href="page2.html">mens wear</a></li>
+      <li><a href="page3.html">kids</a></li>
+      <li><a href="userdetail.html">User Detail</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container" style="background-color: #a7b7c2; ">
+<div class="row" >
+
+
+<div class="col-sm-3" >
+<h2>Login to Purchase</h2><br>
+<form name="f1"><!--action="shoip.js" method="post"-->
+<div class="form-group">
+<h5>Name  : </h5><input type="text"  placeholder="Enter Name.." name="t1" id="a" style="border-radius: 5px; background-color: #639cc;" >
+</div>
+<div class="form-group">
+<h5>Addres: </h5><input type="text" class="form-control" placeholder="Enter Area.." name="t2" id="b" style="border-radius: 5px; background-color: #639cc;" >
+</div>
+<div class="form-group">
+<h5>E-mail: </h5><input type="text" class="form-control" placeholder="email id" name="t3" id="c" style="border-radius: 5px; background-color: #639cc;" ><br>
+</div>
+<button onclick="save()" style="border-radius: 12px; background-color: #639cc;">save</button>
+<button onclick="show()" style="border-radius: 12px; background-color: #639cc;">show</button>
+</form>
+</div>
+
+<div class="col-sm-3" >
+<div class="container">
+<h2>Women</h2> 
+<img src="image\women14.png" class="img-thumbnail" alt="Cinque Terre"  height="300px" width="180px"><br>
+<input type="button" class="button button5" value="Add to cart"  onclick="cart(0)"><br>
+<h6>womens sarees starting at $499</h6>
+<a href="page1.html" data-toggle="similer item" title="Womens Saree">for more</a>
+<h4  price="499"></h4>
+<h3 book="womens_green color cotton_sarees"></h3>
+</div>	
+</div>
+
+<div class="col-sm-3"  >
+<div class="container">
+<h2>Men</h2>
+<img src="image\men8.png" alt="Cinque Terre" height="300px" width="180px">
+<br><input type="button" class="button button5" value="Add to cart"  onclick="cart(1)" ><br>  
+<h6>Brand-mens wear at $399</h6>
+<a href="page2.html" data-toggle="similer item" title="Mens Collections">for more</a>
+<h4  price="399"></h4> 
+<h3 book="Men's Sweatshirt collections"></h3>
+</div>	
+</div>
+
+<div class="col-sm-3" >
+<div class="container">
+  <h2 >Kids zone</h2>
+<img src="image\kid1.png" class="img-thumbnail" alt="Cinque Terre" height="300px" width="180px"><br>
+<input type="button" class="button button5" value="Add to cart"  onclick="cart(2)"><br>
+<h6>Pink partywear for kids at $690</h6>
+<a href="page3.html" data-toggle="similer item" title="kids zone">for more</a>
+<h4  price="690"></h4> 
+<h3 book="Pink partywear for kids"></h3>
+</div>	
+</div>
+
+
+</div>	<!--38-->
+</div>  <!--37-->
+
+<BR><BR>
+<div class="container" id="tab" style="diplay:block; background-color: #a7b7c2 ;" >
+<h2>Items added to cart </h2>
+<div class="jumbotron">
+<div>
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Item added to card</th>
+      <th scope="col">price</th>
+    </tr>
+  </thead>
+  <tbody id="tabcart">
+  </tbody>
+  <tbody>
+  <tr>
+      <th scope="row"></th>
+      <td style="text-align:right;font-size:20px;">         
+      </td>
+    </tr>
+  </tbody>  
+</table>
+</div>
+</div>
+</div>
+<br>
+<!--
+<div class="container" style="background-color:rgb(0, 0, 0);">
+<div class="col-sm-20" style="background-color:rgb(0, 0, 0);">  
+	
+	</div>
+</div>
+-->   
+<div style="
+font-style: italic;
+font-size: 10px;
+text-color: #071a29;
+text-align: center;
+border: 5px solid rgb(0, 0, 0);
+background-color: rgb(0, 0, 0);">
+ <ul class="pager"  style="background-color:rgb(0, 0, 0);">
+    <li><a href="main.html">Back</a></li>
+    <li><a href="page1.html">Next</a></li>
+  </ul>
+</div>
+
+</body>
+
+</html>
